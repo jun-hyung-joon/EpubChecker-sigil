@@ -4,16 +4,18 @@
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](https://github.com/yourusername/epubcheck-sigil)
 [![Sigil](https://img.shields.io/badge/Sigil-1.0%2B-blue)](https://sigil-ebook.com/)
 
-A Sigil plugin that validates EPUB files using epubcheck, providing detailed error reports and warnings directly within the Sigil editor.
+A Sigil plugin that validates EPUB files using epubcheck, providing detailed error reports and warnings directly within the Sigil editor. The plugin automatically detects and uses the latest installed version of epubcheck, ensuring you're always validating with the most up-to-date standards.
 
 ## Features
 
 - 🔍 **Complete EPUB validation** using the official epubcheck tool
+- 🔄 **Auto-detection of latest epubcheck version** - automatically finds and uses the newest installed version
 - 📊 **Detailed error reporting** with line numbers and file locations
 - 🌍 **Cross-platform support** for Windows, macOS, and Linux
 - ⚡ **Easy installation** with automatic epubcheck detection
 - 🎯 **User-friendly output** with categorized errors, warnings, and info messages
 - 🔧 **Flexible setup** supports both JAR and executable versions of epubcheck
+- 🆙 **Future-proof** - works with any epubcheck version without plugin updates
 
 ## Installation
 
@@ -50,7 +52,7 @@ sudo apt install openjdk-11-jdk  # Ubuntu/Debian
 
 ### 3. Install the Sigil Plugin
 
-1. Download the latest `EpubChecker.zip` from [releases](https://github.com/yourusername/epubcheck-sigil/releases)
+1. Download the latest `epubcheck.jar` from [releases](https://github.com/yourusername/epubcheck-sigil/releases)
 2. In Sigil, go to **Plugins** → **Manage Plugins**
 3. Click **Add Plugin** and select the downloaded file
 
@@ -60,9 +62,12 @@ sudo apt install openjdk-11-jdk  # Ubuntu/Debian
 2. Go to **Plugins** → **epubcheck-sigil**
 3. The plugin will:
    - Check for epubcheck installation
+   - Automatically detect the latest installed epubcheck version
    - Generate a temporary EPUB file
-   - Run validation
+   - Run validation using the newest available epubcheck
    - Display detailed results
+
+> **Note**: When you update epubcheck to a newer version, the plugin will automatically use the latest version without requiring any configuration changes.
 
 ### Sample Output
 
@@ -96,7 +101,7 @@ Info: 0 ℹ️
 
 | Platform | Status | Notes |
 |----------|--------|-------|
-| Windows 11 | ✅ | Supports Chocolatey and manual installation |
+| Windows 10/11 | ✅ | Supports Chocolatey and manual installation |
 | macOS | ✅ | Intel and Apple Silicon, Homebrew support |
 | Linux | ✅ | Most distributions with Java support |
 
@@ -108,18 +113,23 @@ Info: 0 ℹ️
 
 ## Troubleshooting
 
-### "epubcheck is not installed"
+### **"epubcheck is not installed"**
 - Ensure epubcheck is installed and accessible
 - Try placing `epubcheck.jar` on your Desktop
 - Check that Java is properly installed
 
-### "Java is not installed"
+### **"Java is not installed"**
 - Install Java using your system's package manager
 - Verify installation with `java -version`
 
-### Plugin not appearing in menu
+### **Plugin not appearing in menu**
 - Restart Sigil after plugin installation
 - Check that the plugin file is in the correct plugins directory
+
+### **Using multiple epubcheck versions**
+- The plugin automatically detects the latest version installed
+- If you have multiple versions, it will use the newest one
+- To force a specific version, ensure only that version is accessible
 
 ## Contributing
 
@@ -140,4 +150,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [epubcheck](https://github.com/w3c/epubcheck) - The official EPUB validation tool
 - [Sigil](https://sigil-ebook.com/) - The amazing EPUB editor
 - All contributors who help improve this plugin
-
