@@ -2,8 +2,8 @@
 <plugin>
     <name>EpubChecker</name>
     <type>edit</type>
-    <author>Claude AI Assistant</author>
-    <description>EPUB 파일 유효성 검사를 위한 epubcheck 통합 플러그인</description>
+    <author>jun-hyung-joon</author>
+    <description>epubcheck integrated plugin for validating EPUB files</description>
     <engine>python3.4</engine>
     <version>1.0.0</version>
     <autostart>true</autostart>
