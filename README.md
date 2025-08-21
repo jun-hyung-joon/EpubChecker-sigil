@@ -50,10 +50,9 @@ sudo apt install openjdk-11-jdk  # Ubuntu/Debian
 
 ### 3. Install the Sigil Plugin
 
-1. Download the latest `plugin.py` from [releases](https://github.com/yourusername/epubcheck-sigil/releases)
+1. Download the latest `EpubChecker.zip` from [releases](https://github.com/yourusername/epubcheck-sigil/releases)
 2. In Sigil, go to **Plugins** → **Manage Plugins**
 3. Click **Add Plugin** and select the downloaded file
-4. Restart Sigil
 
 ## Usage
 
@@ -97,7 +96,7 @@ Info: 0 ℹ️
 
 | Platform | Status | Notes |
 |----------|--------|-------|
-| Windows 10/11 | ✅ | Supports Chocolatey and manual installation |
+| Windows 11 | ✅ | Supports Chocolatey and manual installation |
 | macOS | ✅ | Intel and Apple Silicon, Homebrew support |
 | Linux | ✅ | Most distributions with Java support |
 
@@ -142,14 +141,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Sigil](https://sigil-ebook.com/) - The amazing EPUB editor
 - All contributors who help improve this plugin
 
-## Support
-
-- 🐛 [Report issues](https://github.com/yourusername/epubcheck-sigil/issues)
-- 💬 [Discussions](https://github.com/yourusername/epubcheck-sigil/discussions)
-- 📖 [Wiki](https://github.com/yourusername/epubcheck-sigil/wiki)
-
----
-
-<p align="center">
-  <sub>Built with ❤️ for the EPUB community</sub>
-</p>
