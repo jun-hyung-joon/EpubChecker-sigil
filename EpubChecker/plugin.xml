@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <name>EpubChecker</name>
+    <type>edit</type>
+    <author>Claude AI Assistant</author>
+    <description>EPUB 파일 유효성 검사를 위한 epubcheck 통합 플러그인</description>
+    <engine>python3.4</engine>
+    <version>1.0.0</version>
+    <autostart>true</autostart>
+    <autoclose>false</autoclose>
+    <oslist>win,unx,osx</oslist>
+</plugin>
