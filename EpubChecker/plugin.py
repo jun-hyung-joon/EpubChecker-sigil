@@ -4,6 +4,13 @@
 """
 Sigil EPUB Checker Plugin
 Plugin for validating EPUB files using epubcheck
+
+This plugin integrates with epubcheck (https://github.com/w3c/epubcheck)
+which is developed and maintained by the W3C under the BSD 3-Clause License.
+
+Author: [jun-hyung-joon]
+License: MIT License
+Version: 1.0.0
 """
 
 import sys
