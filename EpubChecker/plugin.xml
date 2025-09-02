@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <name>EpubChecker</name>
+    <type>edit</type>
+    <author>jun-hyung-joon</author>
+    <description>A Sigil plugin that validates EPUB files using epubcheck</description>
+    <engine>python3.4</engine>
+    <version>1.0.0</version>
+    <autostart>true</autostart>
+    <autoclose>false</autoclose>
+    <oslist>win,unx,osx</oslist>
+</plugin>
